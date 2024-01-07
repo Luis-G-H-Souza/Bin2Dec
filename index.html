@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <title>Bin2Dec</title>
+</head>
+<body>
+    <h1>Bin2Dec</h1>
+
+    <div id="container">    
+        <h1>Bin2Dec</h1>
+        <h2>Calculadora para conversão de numero binario para decimal</h2>
+    <div id="cont">
+        <h3>Binario para decimal</h3>
+        <div id="element">
+            <p>Binario:</p>
+            <input type="text" placeholder="Digite um numero binario" class="put" id="bin" maxlength="8" onkeypress="return limitN(event)">
+            <div id="error"></div>
+            <p>Decimal:</p>
+            <input id="out" type="text" class="put" readonly></input>
+        </div>
+            <input type="button" value="Converter" id="but" onclick="calc()">
+        
+    </div>
+    </div>
+</body>
+</html>
